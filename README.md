@@ -1,8 +1,12 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/JppqoIFx)
 
 [![My CI Workflow](https://github.com/Elvira0608/hse-tp-02-Elvira0608/actions/workflows/ci.yml/badge.svg?branch=main&event=push)](https://github.com/Elvira0608/hse-tp-02-Elvira0608/actions/workflows/ci.yml)
+
 [![My CI Workflow](https://github.com/Elvira0608/hse-tp-02-Elvira0608/actions/workflows/ci.yml/badge.svg?branch=main&event=pull_request)](https://github.com/Elvira0608/hse-tp-02-Elvira0608/actions/workflows/ci.yml)
-![Coverage Badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/Elvira0608/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/raw/hse-tp-02-Elvira0608__push_##.json)
+
+[![Coverage Badge](https://github.com/Elvira0608/hse-tp-02-Elvira0608/actions/workflows/ci.yml/coverage.svg?branch=main&event=push)](https://github.com/Elvira0608/hse-tp-02-Elvira0608/actions/workflows/ci.yml)
+
+[![Coverage Badge](https://github.com/Elvira0608/hse-tp-02-Elvira0608/actions/workflows/ci.yml/coverage.svg?branch=main&event=pull_request)](https://github.com/Elvira0608/hse-tp-02-Elvira0608/actions/workflows/ci.yml)
 
 ## Описание задачи
 
