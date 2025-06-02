@@ -29,8 +29,9 @@ jobs:
         run: |
           cd ..
           pytest --cov=.
-          curl -X POST \
-          -H "Content-Type: application/json" \
-          -d '{"chat_id": "1331277451", "text": "Hello from curl!"}' \
-          https://api.telegram.org/bot7705354270:AAGKM_nf8lN12S7SZ90jcCkRl1Cr5bMzzC0/sendMessage
-
+          curl -s -X POST -H 'Content-Type: application/json' / https://api.telegram.org/bot7705354270:AAGKM_nf8lN12S7SZ90jcCkRl1Cr5bMzzC0/sendMessage / -F chat_id="1331277451" -F text="test message"
+        #curl -X POST \
+        #-H "Content-Type: application/json" \
+        #-d '{"chat_id": "1331277451", "text": "Hello from curl!"}' \
+        #https://api.telegram.org/bot7705354270:AAGKM_nf8lN12S7SZ90jcCkRl1Cr5bMzzC0/sendMessage
+          
