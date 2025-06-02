@@ -2,6 +2,7 @@
 
 [![My CI Workflow](https://github.com/Elvira0608/hse-tp-02-Elvira0608/actions/workflows/ci.yml/badge.svg?branch=main&event=push)](https://github.com/Elvira0608/hse-tp-02-Elvira0608/actions/workflows/ci.yml)
 [![My CI Workflow](https://github.com/Elvira0608/hse-tp-02-Elvira0608/actions/workflows/ci.yml/badge.svg?branch=main&event=pull_request)](https://github.com/Elvira0608/hse-tp-02-Elvira0608/actions/workflows/ci.yml)
+![Coverage Badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/Elvira0608/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/raw/hse-tp-02-Elvira0608__push_##.json)
 
 ## Описание задачи
 
