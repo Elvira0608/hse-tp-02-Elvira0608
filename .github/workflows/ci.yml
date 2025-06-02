@@ -29,9 +29,6 @@ jobs:
         run: |
           cd ..
           pytest --cov=.
-        script:
-          - |
-            curl -X POST -H "Content-Type: application/json" -d "{\"1331277451\": \"1331277451\", \"text\": \"Build started!\"}" \
-            https://api.telegram.org/bot<7705354270:AAGKM_nf8lN12S7SZ90jcCkRl1Cr5bMzzC0>/sendMessage
+          curl -X POST -H "Content-Type: application/json" -d "{\"1331277451\": \"1331277451\", \"text\": \"Build started!\"}" \https://api.telegram.org/bot<7705354270:AAGKM_nf8lN12S7SZ90jcCkRl1Cr5bMzzC0>/sendMessage
         #when: on_success
 
