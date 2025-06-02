@@ -57,5 +57,5 @@ def test_console_start(setup_for_main):
     arguments = ["temp"]
     original_argv = sys.argv
     sys.argv = [sys.argv[0]] + arguments
-    runpy.run_path("hse-tp-02-Elvira0608\src\scripts\update_index.py", run_name="__main__")
+    runpy.run_path("hse-tp-02-Elvira0608/src/scripts/update_index.py", run_name="__main__")
     sys.argv = original_argv
