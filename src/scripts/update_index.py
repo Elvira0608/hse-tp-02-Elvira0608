@@ -8,7 +8,6 @@ from src.media_indexing.folder_index import (
     reindex_folders,
 )
 
-
 def main(input_dir: Path) -> None:
     print(input_dir)
     mapping = get_updated_media_paths(input_dir)

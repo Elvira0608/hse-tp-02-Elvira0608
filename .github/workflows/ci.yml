@@ -1,0 +1,29 @@
+name: My CI Workflow
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/sutup-python@v5
+        with:
+          python-version: '3.13'
+          chache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.exe
+
+      - name: Run tests
+        run: npytest .
