@@ -29,6 +29,7 @@ jobs:
         run: |
           cd ..
           pytest --cov=.
-          cd ..
+          cd a
           coverage-badge -o coverage.svg
+          cd ..
 
