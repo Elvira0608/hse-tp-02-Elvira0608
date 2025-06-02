@@ -105,18 +105,18 @@ def test_rename_with_counter(create_folders_and_media_files):
 def test_create_folder(create_folders_and_media_files):
     with pytest.raises(Exception) as e_info:
         Folder(Path("temp/Metallica/song [Metallica].mp3"))
-    assert str(e_info.value) == "temp\Metallica\song [Metallica].mp3 is not a dir, but its expected to be"
+    assert str(e_info.value) == "temp\\Metallica\\song [Metallica].mp3 is not a dir, but its expected to be"
 
 def test_create_media(create_folders_and_media_files):
     print(Path("temp/inner").is_dir())
     with pytest.raises(Exception) as e_info:
         Media(Path("temp/inner"))
-    assert str(e_info.value) == "temp\inner is a dir, but its expected to be"
+    assert str(e_info.value) == "temp\\inner is a dir, but its expected to be"
 
 def test_rename_update(create_folders_and_media_files):
     media = Media(Path("temp/inner/song [Metallica].mp3"))
     media.rename_update()
-    assert Path("temp\inner\song [Metallica].mp3").is_file() == True
+    assert Path("temp\\inner\\song [Metallica].mp3").is_file() == True
 
 def test_remove_artist():
     assert remove_artist("song [Metallica].mp3") == "song .mp3"
