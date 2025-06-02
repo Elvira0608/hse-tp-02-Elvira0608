@@ -10,7 +10,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
       - name: Checkout code
@@ -29,21 +29,6 @@ jobs:
         run: |
           cd ..
           pytest --cov=.
-        #curl -X POST -H "Content-Type: application/json" -d "{\"1331277451\": \"1331277451\", \"text\": \"Build started!\"}" \https://api.telegram.org/bot<7705354270:AAGKM_nf8lN12S7SZ90jcCkRl1Cr5bMzzC0>/sendMessage
-          
-
-      - name: Send Telegram notification
-        uses: appleboy/telegram-action@master
-        with:
-          #to: ${{ secrets.TELEGRAM_CHAT_ID }}
-          to: 1331277451
-          #token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          token: 7705354270:AAGKM_nf8lN12S7SZ90jcCkRl1Cr5bMzzC0
-          message: |
-            Build status for ${{ github.repository }}:
-            Commit: ${{ github.sha }}
-            Branch: ${{ github.ref_name }}
-            Event: ${{ github.event_name }}
-            Status: ${{ job.status }}    
-        #when: on_success
+          curl -X POST -H "Content-Type: application/json" -d "{\"1331277451\": \"1331277451\", \"text\": \"Build started!\"}" \
+          https://api.telegram.org/bot<7705354270:AAGKM_nf8lN12S7SZ90jcCkRl1Cr5bMzzC0>/sendMessage
 
