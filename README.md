@@ -3,9 +3,6 @@
 [![My CI Workflow](https://github.com/Elvira0608/hse-tp-02-Elvira0608/actions/workflows/ci.yml/badge.svg?branch=main&event=push)](https://github.com/Elvira0608/hse-tp-02-Elvira0608/actions/workflows/ci.yml)
 [![My CI Workflow](https://github.com/Elvira0608/hse-tp-02-Elvira0608/actions/workflows/ci.yml/badge.svg?branch=main&event=pull_request)](https://github.com/Elvira0608/hse-tp-02-Elvira0608/actions/workflows/ci.yml)
 
-[![Coverage](https://github.com/Elvira0608/hse-tp-02-Elvira0608/actions/workflows/ci.yml/coverage.svg?branch=main&event=push)](https://github.com/Elvira0608/hse-tp-02-Elvira0608/actions/workflows/ci.yml)
-[![Coverage](https://github.com/Elvira0608/hse-tp-02-Elvira0608/actions/workflows/ci.yml/coverage.svg?branch=main&event=pull_request)](https://github.com/Elvira0608/hse-tp-02-Elvira0608/actions/workflows/ci.yml)
-
 
 ## Описание задачи
 
