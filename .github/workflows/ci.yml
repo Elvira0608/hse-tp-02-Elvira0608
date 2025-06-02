@@ -35,9 +35,9 @@ jobs:
       - name: Send Telegram notification
         uses: appleboy/telegram-action@master
         with:
-          to: ${{ secrets.TELEGRAM_CHAT_ID }}
+          #to: ${{ secrets.TELEGRAM_CHAT_ID }}
           to: 1331277451
-          token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          #token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           token: 7705354270:AAGKM_nf8lN12S7SZ90jcCkRl1Cr5bMzzC0
           message: |
             Build status for ${{ github.repository }}:
