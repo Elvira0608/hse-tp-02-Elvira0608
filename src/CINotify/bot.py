@@ -13,7 +13,7 @@ def send_notification(status: bool):
         bot.send_message(bot_config.chat_id, bot_config.message_when_failed, "Markdown")
 
 def check_test_status():
-    with open('hse-tp-02-Elvira0608/src/report.json', 'r') as file:
+    with open("report.json", 'r') as file:
         data = json.load(file)
     #print(data)
     failed_tests = int(data["report"]["summary"]["failed"])
@@ -25,7 +25,7 @@ def check_test_status():
 
 if __name__ == '__main__':
     #bot.infinity_polling()
-    if(Path("hse-tp-02-Elvira0608/src/report.json").is_file()):
+    if(Path("report.json").is_file()):
         if(check_test_status()):
             send_notification(True)
         else:

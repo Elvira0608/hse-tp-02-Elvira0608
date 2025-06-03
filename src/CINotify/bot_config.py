@@ -3,7 +3,7 @@ import json
 
 def get_report_when_failed():
     temp = ""
-    with open('hse-tp-02-Elvira0608/src/report.json', 'r') as file:
+    with open("report.json", 'r') as file:
         data = json.load(file)
 
     failed_tests = int(data["report"]["summary"]["failed"])
