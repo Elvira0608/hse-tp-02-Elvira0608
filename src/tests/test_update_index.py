@@ -41,7 +41,7 @@ def setup_for_main():
 
 def test_main_folders(setup_for_main):
     main(setup_for_main)
-    assert Path("temp").is_dir() == True and Path("temp/Beatles (2)").is_dir() == True and Path("temp/Chris Cornell (1)").is_dir() == True
+    assert Path("temp").is_dir() == True and Path("temp/Beatles (1)").is_dir() == True and Path("temp/Chris Cornell (1)").is_dir() == True
     assert Path("temp/Marion Black (1)").is_dir() == True  and Path("temp/Pearl Jam (1)").is_dir() == True  and Path("temp/Tool (1)").is_dir() == True
     assert Path("temp/VA (2)").is_dir() == True
 
@@ -58,7 +58,5 @@ def test_console_start(setup_for_main):
     arguments = ["temp"]
     original_argv = sys.argv
     sys.argv = [sys.argv[0]] + arguments
-    #path = os.path.join("src","scripts","update_index.py")
-    #print(path)
-    runpy.run_path("hse-tp-02-Elvira0608/src/scripts/update_ndex.py", run_name="__main__")
+    assert runpy.run_path("hse-tp-02-Elvira0608/src/scripts/update_index.py", run_name="__main__")
     sys.argv = original_argv
