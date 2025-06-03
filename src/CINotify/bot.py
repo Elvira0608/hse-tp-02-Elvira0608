@@ -8,9 +8,9 @@ bot = telebot.TeleBot(bot_config.token)
 @bot.message_handler(content_types=["text"])
 def send_notification(status: bool):
     if(status):
-        bot.send_message(bot_config.chat_id, bot_config.message_when_passed, "Markdown")
+        bot.send_message(bot_config.chat_id, bot_config.message_when_passed)
     else:
-        bot.send_message(bot_config.chat_id, bot_config.message_when_failed, "Markdown")
+        bot.send_message(bot_config.chat_id, bot_config.message_when_failed)
 
 def check_test_status():
     if(Path("report.json").is_file()):

@@ -12,13 +12,13 @@ def get_report_when_failed():
         failed_tests = int(data["report"]["summary"]["failed"])
     else:
         failed_tests = 0
-        
+
     if(failed_tests > 0):
         for test in data["report"]["tests"]:
             if(test["outcome"] == "failed"):
-                temp += "*TEST NAME*: " + test["name"] + "\n"  
+                temp += "TEST NAME: " + test["name"] + "\n"  
                 temp += test["call"]["longrepr"] + "\n"  
-        res = "*Feiled tests (%d)*\n" % failed_tests + temp
+        res = "Failed tests (%d)\n" % failed_tests + temp
     else:
         res = "All passed"  
     return res
