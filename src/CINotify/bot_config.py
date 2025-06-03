@@ -3,10 +3,14 @@ import json
 
 def get_report_when_failed():
     temp = ""
-    with open("report.json", 'r') as file:
-        data = json.load(file)
+    if(Path("report.json").is_file()):
+        with open("report.json", 'r') as file:
+            data = json.load(file)
 
-    failed_tests = int(data["report"]["summary"]["failed"])
+    if("failed" in data):
+        failed_tests = int(data["report"]["summary"]["failed"])
+    else:
+        failed_tests = 0
     if(failed_tests > 0):
         for test in data["report"]["tests"]:
             if(test["outcome"] == "failed"):
