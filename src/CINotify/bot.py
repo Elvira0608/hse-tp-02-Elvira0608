@@ -13,10 +13,15 @@ def send_notification(status: bool):
         bot.send_message(bot_config.chat_id, bot_config.message_when_failed, "Markdown")
 
 def check_test_status():
-    with open("report.json", 'r') as file:
-        data = json.load(file)
-    #print(data)
-    failed_tests = int(data["report"]["summary"]["failed"])
+    if(Path("report.json").is_file()):
+        with open("report.json", 'r') as file:
+            data = json.load(file)
+
+    if("failed" in data):
+        failed_tests = int(data["report"]["summary"]["failed"])
+    else:
+        failed_tests = 0
+        
     if(failed_tests > 0):
         print(data["report"]["summary"]["failed"])
         return False
@@ -24,7 +29,6 @@ def check_test_status():
         return True
 
 if __name__ == '__main__':
-    #bot.infinity_polling()
     if(Path("report.json").is_file()):
         if(check_test_status()):
             send_notification(True)
