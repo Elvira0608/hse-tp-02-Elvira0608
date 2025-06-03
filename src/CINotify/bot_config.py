@@ -18,7 +18,7 @@ def get_report_when_failed():
                 temp += test["call"]["longrepr"] + "\n"  
         res = "*Feiled tests (%d)*\n" % failed_tests + temp
     else:
-        res = "All passed"    
+        res = "All passed"  
     return res
 
 token = '7705354270:AAGKM_nf8lN12S7SZ90jcCkRl1Cr5bMzzC0'
