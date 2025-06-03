@@ -17,11 +17,11 @@ def check_test_status():
         with open("report.json", 'r') as file:
             data = json.load(file)
 
-    if("failed" in data):
+    if("failed" in data["report"]["summary"]):
         failed_tests = int(data["report"]["summary"]["failed"])
     else:
         failed_tests = 0
-        
+
     if(failed_tests > 0):
         print(data["report"]["summary"]["failed"])
         return False
