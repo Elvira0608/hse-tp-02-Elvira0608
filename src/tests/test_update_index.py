@@ -36,7 +36,6 @@ def setup_for_main():
             pass
 
     yield path
-    #time.sleep(2)
     shutil.rmtree("temp")
 
 def test_main_folders(setup_for_main):

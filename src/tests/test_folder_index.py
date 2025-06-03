@@ -35,8 +35,6 @@ def test_remove_counter():
     impliedString = "Artist A"
     assert remove_counter("Artist A (2)") == impliedString
 
-#-----------------Тестирование с одним медиафайлом с указанием исполнителя---------------------------
-
 @pytest.fixture
 def create_folders_and_media_files():
     folder_path = Path("temp")
@@ -51,10 +49,6 @@ def create_folders_and_media_files():
 
 def test_get_folders_on_empty_path(tmp_path):
     assert get_folders(tmp_path) == []
-
-# тест не проходится из-за невозможности сравнения объектов класса Folder
-#def test_get_folders(create_folders_and_media_files):
-    #assert get_folders(Path("temp")) == [create_folders_and_media_files[0]]
 
 
 def test_get_folder_files_on_empty(tmp_path):
@@ -120,3 +114,6 @@ def test_rename_update(create_folders_and_media_files):
 
 def test_remove_artist():
     assert remove_artist("song [Metallica].mp3") == "song .mp3"
+ 
+def test_remove_artist_no_artist():
+    assert remove_artist("song.mp3") == "song.mp3" 
