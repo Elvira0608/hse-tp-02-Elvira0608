@@ -3,7 +3,7 @@
 ### Push
 [![OnPush](https://github.com/Elvira0608/hse-tp-02-Elvira0608/actions/workflows/ci.yml/badge.svg?branch=main&event=push)](https://github.com/Elvira0608/hse-tp-02-Elvira0608/actions/workflows/ci.yml)
 ### Pull-request
-[![OnPull-Request](https://github.com/Elvira0608/hse-tp-02-Elvira0608/actions/workflows/ci.yml/badge.svg?branch=main&event=pull_request)](https://github.com/Elvira0608/hse-tp-02-Elvira0608/actions/workflows/ci.yml)
+[![OnPull-Request](https://github.com/Elvira0608/hse-tp-02-Elvira0608/actions/workflows/ci.yml/badge.svg?branch=pullTest&event=pull_request)](https://github.com/Elvira0608/hse-tp-02-Elvira0608/actions/workflows/ci.yml)
 
 
 ## Описание задачи
