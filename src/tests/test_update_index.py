@@ -41,7 +41,7 @@ def setup_for_main():
 
 def test_main_folders(setup_for_main):
     main(setup_for_main)
-    assert Path("temp").is_dir() == True and Path("temp/Beatles (1)").is_dir() == True and Path("temp/Chris Cornell (1)").is_dir() == True
+    assert Path("temp").is_dir() == True and Path("temp/Beatles (2)").is_dir() == True and Path("temp/Chris Cornell (1)").is_dir() == True
     assert Path("temp/Marion Black (1)").is_dir() == True  and Path("temp/Pearl Jam (1)").is_dir() == True  and Path("temp/Tool (1)").is_dir() == True
     assert Path("temp/VA (2)").is_dir() == True
 
